@@ -57,4 +57,19 @@ When a user is navigating a user interface with directional keys or a trackball,
 
 For a touch-capable device, once the user touches the screen, the device will enter touch mode. From this point onward, only Views for which isFocusableInTouchMode() is true will be focusable, such as text editing widgets. Other Views that are touchable, like buttons, will not take focus when touched; they will simply fire their on-click listeners when pressed.
 
-**To query the current you can call isInTouchMode() to verify if the device is currently in touch mode or not**
+**To query the current you can call #isInTouchMode() to verify if the device is currently in touch mode or not**
+
+## Touch Gestures
+
+A "touch gesture" occurs when user places one or more fingers on the touch screen, and your app intercepts that pattern of touches as a particular gesture.
+- Gather data about touch events.
+- Intercept the data and see if it meets the gestures that your app supports.
+
+**Gather data:**
+When a user places one or more fingers on the screen, this triggers the callback **onTouchEvent()** on the View that received the touch events.
+
+Throughout the user interaction with the View, the **MotionEvent** delivered to **onTouchEvent()**.
+ 
+ For common gestures, such as double tap, long press, fling etc., you can use **GestureDetector** to detect them.
+ 
+**MotionEvent  delivered to onTouchEvent() the touchevent can pass the motionevent to the GestureDetector**
