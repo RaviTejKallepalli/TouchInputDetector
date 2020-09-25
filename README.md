@@ -29,8 +29,8 @@ and override the method callbacks **(Event listeners)** that you can use.
 -onKey()
 -onTouch()
 
-**Note:returns a boolean to indicate whether you have consumed the event and it should not be carried further. 
-That is, *return true to indicate that you have handled the event and it should stop here;*
- *return false if you have not handled it and/or the event should continue to any other on-click listeners*.**
+**Note:** returns a boolean to indicate whether you have consumed the event and it should not be carried further. That is, 
+**return true** to indicate that *you have handled* the event and it should stop here;
+**return false** if *you have not handled it* and/or the event should continue to any other on-click listeners.
 
 
