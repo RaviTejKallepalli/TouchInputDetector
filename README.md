@@ -23,11 +23,11 @@ and override the method callbacks **(Event listeners)** that you can use.
   
 ### Event listeners
 
--onClick()
--onLongClick()
--onFocusChange()
--onKey()
--onTouch()
+- onClick()
+- onLongClick()
+- onFocusChange()
+- onKey()
+- onTouch()
 
 **Note:** returns a boolean to indicate whether you have consumed the event and it should not be carried further. That is, 
 **return true** to indicate that *you have handled* the event and it should stop here;
