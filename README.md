@@ -19,7 +19,7 @@ The View class provides the various methods for this purpose.
 These methods are called by the Andriod framework when the respective actions occurs on the View object. 
 For example: When a Button(View) is touched, the onTouchEvent() method is called one the object. 
 However inorder to intercept this, you must extend the class 
-and override the method callbacks ** (Event listeners) **that you can use.
+and override the method callbacks **(Event listeners)** that you can use.
   
 
 
